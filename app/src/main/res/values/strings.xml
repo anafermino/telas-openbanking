@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">OpenBanking</string>
+    <string name="frase_concluindo">estamos concluindo sua transação</string>
+    <string name="frase_aguarde">aguarde alguns instantes...</string>
+    <string name="frase_realizada">transferência realizada</string>
+    <string name="moeda">R$</string>
+    <string name="frase_valor_transferido">valor transferido via Pix</string>
+    <string name="para">para</string>
+    <string name="botao_ver_comprovante">ver comprovante</string>
+    <string name="botao_compartilhar">compartilhar</string>
+
+</resources>

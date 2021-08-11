@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/btnFecharAba"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/cancel"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/topo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFecharAba"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+    
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/checked"
+        />
+        
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="@string/frase_realizada"
+            android:textSize="30sp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            />
+            
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/white_button_bg"
+        app:layout_constraintTop_toBottomOf="@id/topo"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="50dp"
+        android:padding="20dp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="vertical"
+            >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/dollar"
+            android:layout_marginTop="16dp"
+            />
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/send"
+                android:layout_marginTop="50dp"
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:orientation="vertical"
+                >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/moeda"
+            />
+
+    </LinearLayout>
+
+    </LinearLayout>
+    
+   <LinearLayout
+       android:id="@+id/bottom"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintBottom_toBottomOf="parent"
+       android:orientation="vertical"
+       android:gravity="center_horizontal"
+       android:layout_marginHorizontal="20dp"
+       android:layout_marginBottom="20dp"
+      >
+
+       <Button
+
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:text="@string/botao_ver_comprovante"
+           android:textSize="16sp"
+           android:textColor="@color/blue"
+           app:strokeColor="@color/blue"
+           app:strokeWidth="1dp"
+           android:backgroundTint="@color/white"
+           android:textAllCaps="false"
+           android:layout_marginBottom="4dp"
+           />
+
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="60dp"
+           android:backgroundTint="@color/orange"
+           android:text="@string/botao_compartilhar"
+           android:textSize="16sp"
+           android:textAllCaps="false"
+           android:textColor="@color/white"
+           />
+
+   </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
